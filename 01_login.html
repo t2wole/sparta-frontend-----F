@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <title>로그인페이지</title>
     <style>
-    .mytitle {
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+        .mytitle {
+            width: 280px;
+            height: 200px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
 
-    }
+            background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+            background-size: cover;
+            background-position: center;
+
+            padding-top: 20px;
+        }
+
+        .wrap {
+            width: 280px;
+            margin: auto;
+        }
+
+        .btn {
+            width: 100px;
+            margin: auto;
+            display: block;
+        }
+
     </style>
 </head>
+
 <body>
-    <div class="mytitle">
-        <h1>로그인 페이지</h1>
-        <h5>아이디, 패스워드를 입력해주세요</h5>
+    <div class="wrap">
+        <div class="mytitle">
+            <h1>로그인 페이지</h1>
+            <h5>아이디, 패스워드를 입력해주세요</h5>
+        </div>
+
+        <p>ID: <input type="text"></p>
+        <p>PW: <input type="text"></p>
+        <p><input type="button" class="btn" value="로그인하기"></input></p>
     </div>
-    ID: <input type="text">
-    <p>PW: <input type="text"></p>
-    <p><input type="button" value="로그인하기"></input></p>
 </body>
+
 </html>
